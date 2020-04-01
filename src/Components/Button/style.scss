@@ -1,0 +1,30 @@
+$bgButton: #f0f0f0;
+$borderButton:1px solid gray;
+
+.button{
+    background-color: $bgButton;
+    border-right: $borderButton;
+    border-left: $borderButton;
+    font-size: 14px;
+}
+
+.button:active{
+    background-color: #ccc;
+}
+
+.button.double{
+    grid-column: span 2;
+}
+
+.button.triple{
+    grid-column: span 3;
+}
+
+.button.operation{
+    background-color: #fa8231;
+    color: #fff;
+}
+
+.button.operation:active{
+    background-color: #fa8231cc;
+}

@@ -1,0 +1,29 @@
+$baseRem: 16px;
+$backgroundColor: gray;
+
+.content-calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+    h1{
+        margin-bottom: $baseRem;
+    }
+
+    .calculator{
+        height: 320px;
+        width: 235px;
+        background-color: $backgroundColor;
+        overflow: hidden;
+        display: grid;
+        /* 4 colunas */
+        grid-template-columns: repeat(4, 1fr);
+        /* O 1fr do lado do 48px abaixo significa que existirá uma linha que vai pegar o espaço disponível restante do container pai */
+        grid-template-rows: 1fr 48px 48px 48px 48px 48px;
+    }
+    
+}
+
+
